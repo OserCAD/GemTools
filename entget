@@ -1,0 +1,13 @@
+(entget (car (entsel))) ;Still mistified by this little sucker
+;entget:AutoLisp
+
+;SamplerGem
+(setq some_discriptive_variable_name_of_your_choice_simple_or_complex (entget (car (entsel))))
+
+(vlax-ename->vla-object (car (entsel))) ;Another way of doing it
+;vlax-ename->vla-object:VisualLisp 
+
+;SamplerGem
+(setq some_discriptive_variable_name_of_your_choice_simple_or_complex (vlax-ename->vla-object (car (entsel))))
+
+
